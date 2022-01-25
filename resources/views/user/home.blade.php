@@ -190,7 +190,7 @@
         </div>
       </div>
     </div>
-  </div> <!-- .banner-home -->
+  </div> .banner-home
 
   <footer class="page-footer">
     <div class="container">
