@@ -1,6 +1,7 @@
 ## Hospital Management System
 
-Creating Hospital Management System by following tutorial by Web Tech Knowledge
+Creating Hospital Management System by following tutorial by Web Tech Knowledge -> 
+Learning Process into Laravel
 
 ## Software / Tool 
 - Laragon
@@ -10,6 +11,8 @@ Creating Hospital Management System by following tutorial by Web Tech Knowledge
 - Tailwind/Bootstrap
 - Jetstream
 - HeidiSQL
+- Corona Template - Admin
+- free-css Template - User
 
 
 
