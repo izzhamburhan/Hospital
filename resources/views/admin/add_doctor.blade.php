@@ -13,7 +13,7 @@
       <!-- partial -->
      @include('admin.navbar')
         <!-- partial -->
-       @include('admin.body')
+    
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
     <!-- container-scroller -->
