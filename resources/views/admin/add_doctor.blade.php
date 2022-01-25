@@ -39,17 +39,17 @@
                     @csrf
                     <div style="padding:15px;">
                         <label for="">Doctor Name</label>
-                        <input type="text" style="color:black;" name="name" placeholder="Write the name">
+                        <input type="text" style="color:black;" name="name" placeholder="Write the name" required>
                     </div>
 
                     <div style="padding:15px;">
                         <label for="">Phone Number</label>
-                        <input type="number" style="color:black;" name="phone" placeholder="Insert Your Number">
+                        <input type="number" style="color:black;" name="phone" placeholder="Insert Your Number" required>
                     </div>
 
                     <div style="padding:15px;">
                         <label for="">Speciality</label>
-                        <select name="specialty" id="" style="color:grey;">
+                        <select name="specialty" id="" style="color:grey;" required>
                             <option value="">Choose One Specialty</option>      
                             <option value="skin">Skin</option>
                             <option value="teeth">Teeth</option>
@@ -60,12 +60,12 @@
 
                     <div style="padding:15px;">
                         <label for="">Room No.</label>
-                        <input type="text" style="color:black;" name="room_no" placeholder="Insert the Room Number">
+                        <input type="text" style="color:black;" name="room_no" placeholder="Insert the Room Number" required>
                     </div>
 
                     <div style="padding:15px;">
                         <label for="">Doctor Image</label>
-                        <input type="file" name="file">
+                        <input type="file" name="file" required>
                     </div>
 
                     <div style="padding:15px;">
