@@ -11,6 +11,8 @@ Learning Process into Laravel
 - Tailwind/Bootstrap
 - Jetstream
 - HeidiSQL
+- Corona Template - Admin
+- free-css Template - User
 
 
 
