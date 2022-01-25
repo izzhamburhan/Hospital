@@ -25,21 +25,16 @@
         <!-- partial -->
 
         <div class="container-fluid page-body-wrapper">
+            <div class="container" style="padding-top:100px;" align="center" >
+             <!-- success message -->
+             @if(session()->has('message'))
 
-            <div class="container" style="padding-top:100px;" >
-
-                    <!-- success message -->
-                    @if(session()->has('message'))
-
-                        <div class="alert alert-success">
-
-                        <button type="button" class="close" data-dismiss="alert">x</button>
-                        
-                        {{ session()->get('message') }}
-
-                        </div>
-                    @endif
-
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">x</button> 
+                    {{ session()->get('message') }}
+                </div>
+                
+                @endif
                 <form action="{{ url('upload_doctor') }}" method="POST" enctype="multipart/form-data" align="center" style="padding-top:50px;">
                     @csrf
                     <div style="padding:15px;">

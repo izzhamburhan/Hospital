@@ -33,6 +33,6 @@ class AdminController extends Controller
         //save
         $doctor->save();
 
-        return redirect()->back()->with('message','Doctor has Added Successfully');
+        return redirect()->back()->with('message' , 'Doctor has Added Successfully');
     }
 }
