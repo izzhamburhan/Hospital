@@ -1,15 +1,25 @@
+# Learning Process -> Laravel
+
 ## Hospital Management System
 
-Creating Hospital Management System by following tutorial by Web Tech Knowledge -> 
-Learning Process into Laravel
+Creating Hospital Management System by following tutorial by Web Tech Knowledge.
+
+Step by step : 
+login 
+auth
+insert data - migrate
+delete data
+display data
+cancel data
+
 
 ## Software / Tool 
 - Laragon
 - Node.js
 - Composer
 - Laravel
-- Tailwind/Bootstrap
-- Jetstream
+- Bootstrap
+- Jetstream (tapi tiada tailwind?)
 - HeidiSQL
 - Corona Template - Admin
 - free-css Template - User
