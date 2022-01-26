@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 use App\Models\Doctor;
 use App\Models\Appointment;
 
@@ -62,6 +64,28 @@ class AdminController extends Controller
 
         $data->save();
 
+        return redirect()->back();
+    }
+
+    public function showdoctor()
+    {
+         if(Auth::id()) //supaya kalau ada orang nak masuk myappointment Melalui URL/http akan ditapis
+        {
+            $userid=Auth::user()->id; // 
+            $data=doctor::all();
+
+            return view('admin.showdoctor',compact('data'));
+        }
+        else
+        {
+            return redirect()->back();
+        }
+    }
+
+    public function deletedoctor($id)
+    {
+        $data=doctor::find($id);
+        $data->delete();
         return redirect()->back();
     }
 }
