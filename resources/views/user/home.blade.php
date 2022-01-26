@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>One Health</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -87,6 +87,10 @@
             @if(Route::has('login'))
             @auth
 
+            <li class="nav-item">
+              <a class="nav-link" style="background-color:greenyellow; color:white; border-radius:3px;" href="{{url('myappointment')}}">My Appointment</a>
+            </li>
+
             <x-app-layout>
             </x-app-layout>
 
@@ -98,7 +102,6 @@
               <a class="btn btn-primary ml-lg-3" href="{{ route('register' )}}">Register</a>
             </li>
             @endauth
-
             @endif
 
 
