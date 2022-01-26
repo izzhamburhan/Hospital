@@ -16,9 +16,12 @@
       
         
     <div class="page-body-wrapper"> 
-    
-        <div align="center" class="table-responsive-lg">
-            <table class="table" >
+    <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">List of Doctor</h4>
+                    <div class="table-responsive">
+                    <table class="table" >
                 <tr>
                     <th>Customer Name</th>
                     <th>Email</th>
@@ -46,11 +49,17 @@
                 @endforeach
 
             </table>
-            
-        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+
+     
     </div>
 
 
+
+    <!-- test -->
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
     <!-- container-scroller -->
