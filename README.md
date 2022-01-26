@@ -5,12 +5,12 @@
 Creating Hospital Management System by following tutorial by Web Tech Knowledge.
 
 Step by step : 
-login 
-auth
-insert data - migrate
-delete data
-display data
-cancel data
+- login 
+- auth
+- insert data - migrate
+- delete data
+- display data
+- cancel data
 
 
 ## Software / Tool 
