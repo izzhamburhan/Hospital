@@ -19,10 +19,20 @@
 
           <div class="container-fluid page-body-wrapper">
               
-
           <div class="col-12 grid-margin stretch-card">
+          
                 <div class="card">
                   <div class="card-body">
+
+                  @if(session()->has('message'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                {{session()->get('message')}}
+            </div>
+
+            @endif
+
+
                     <h4 class="card-title">Update Doctor</h4>
                     <p class="card-description"></p>
                     <form class="forms-sample" action="{{url('editdoctor',$data->id)}}" enctype="multipart/form-data" method="POST">
@@ -33,7 +43,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail3">Phone</label>
-                        <input type="number"  style="color:black;" class="form-control" id="phone" name=name value="{{$data->phone}}">
+                        <input type="number"  style="color:black;" class="form-control" id="phone" name=phone value="{{$data->phone}}">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword4">Specialty</label>
@@ -61,7 +71,6 @@
                          </div>
 
                          <input type="submit" class="btn btn-success">  
-                      <button class="btn btn-dark">Cancel</button>
 
                     </form>
                   </div>

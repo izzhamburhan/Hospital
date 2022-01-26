@@ -99,22 +99,22 @@ class AdminController extends Controller
     {
         $doctor=doctor::find($id);
 
-        $data->name=$request->name;
-        $data->phone=$request->phone;
-        $data->specialty=$request->specialty;
-        $data->room_no=$request->room_no;
+        $doctor->name=$request->name;
+        $doctor->phone=$request->phone;
+        $doctor->specialty=$request->specialty;
+        $doctor->room_no=$request->room_no;
 
         $image=$request->file;
 
         if($image)
         {
-        $imagename=time().'.'.$image->getOriginalClientExtension();
+        $imagename=time().'.'.$image->getClientOriginalExtension();
         $request->file->move('doctorimage',$imagename);
         $doctor->image=$imagename;
         }
         $doctor->save();
 
-        return redirect()->back();
+        return redirect()->back()->with('message','Update Success !');
 
     }
 }
