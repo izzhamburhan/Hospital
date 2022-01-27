@@ -61,7 +61,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleSelectGender">Old Image</label>
-                        <img src="doctorimage/{{$data->image}}" class="rounded-circle mx-auto" alt="">
+                        <img src="doctorimage/{{$data->image}}" class="rounded mx-auto" alt="">
                       </div>
                       
                     
