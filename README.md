@@ -11,6 +11,8 @@ Step by step :
 - delete data
 - display data
 - cancel data
+- send email (user) - complicated need practise
+- send notification (admin) - complicated need practise
 
 
 ## Software / Tool 
